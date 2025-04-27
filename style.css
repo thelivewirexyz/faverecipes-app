@@ -30,10 +30,14 @@ h1 {
 }
 
 #recipe-form {
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
   border-bottom: 1px solid #dcdcdc;
   display: none;
+}
+#recipe-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 2rem;
 }
 #new-recipe {
   transition: all 0.3s ease-in-out;
@@ -42,6 +46,7 @@ h1 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  color: black;
   background-color: white;
 }
 #new-recipe .add {
@@ -52,9 +57,7 @@ h1 {
   color: white;
 }
 .active {
-  display: flex !important;
-  flex-direction: column;
-  gap: 10px;
+  display: block !important;
 }
 input,
 select {
@@ -66,6 +69,7 @@ select {
 #add-btn {
   background-color: black;
   color: white;
+  border: none;
   border-radius: 20px;
   padding: 0.7rem 0;
   font-size: 1rem;
