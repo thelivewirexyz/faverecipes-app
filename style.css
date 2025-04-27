@@ -10,6 +10,12 @@ body {
   margin-block: 4rem;
   overflow: hidden;
 }
+@media only screen and (max-width: 600px) {
+  #maincontainer {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 #header {
   border-bottom: 1px solid #dcdcdc;
   background-color: rgb(216, 255, 142);
