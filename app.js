@@ -101,7 +101,7 @@ window.addEventListener("load", function () {
   const content = document.getElementById("maincontainer");
 
   // Start fade out
-  preloader.style.transition = "opacity 0.5s ease";
+  preloader.style.transition = "opacity 5.5s ease";
   preloader.style.opacity = "0";
 
   // After fade-out (0.5s) + 2s delay (total 2.5s)
@@ -109,5 +109,5 @@ window.addEventListener("load", function () {
     preloader.style.display = "none"; // Hide the preloader
     content.style.display = "block"; // Show the actual content
     document.body.style.overflow = "auto"; // Re-enable scrolling
-  }, 13500); // 500ms fade + 2000ms delay
+  }, 5500); // 500ms fade + 2000ms delay
 });
