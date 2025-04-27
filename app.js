@@ -96,18 +96,28 @@ newRecipeBtn.addEventListener("click", function () {
 });
 
 // Wait for FULL page load (including images, fonts, videos)
+const fadeTime = 500; // Fade-out duration (0.5s)
+const delayBeforeFade = 5000; // Delay before starting fade-out (2s)
+
 window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   const content = document.getElementById("maincontainer");
 
-  // Start fade out
-  preloader.style.transition = "opacity 5.5s ease";
-  preloader.style.opacity = "0";
-
-  // After fade-out (0.5s) + 2s delay (total 2.5s)
+  // Wait before starting fade-out
   setTimeout(() => {
-    preloader.style.display = "none"; // Hide the preloader
-    content.style.display = "block"; // Show the actual content
-    document.body.style.overflow = "auto"; // Re-enable scrolling
-  }, 5500); // 500ms fade + 2000ms delay
+    preloader.style.transition = `opacity ${fadeTime}ms ease`;
+    preloader.style.opacity = "0";
+
+    // After fade-out completes
+    setTimeout(() => {
+      preloader.style.display = "none"; // Fully hide preloader
+      content.style.display = "block"; // Show page content
+      document.body.style.overflow = "auto"; // Enable scrolling
+
+      // Trigger fade-in of content
+      setTimeout(() => {
+        content.classList.add("visible"); // Fade in content
+      }, 50); // Tiny delay to ensure "display:block" is applied before animating
+    }, fadeTime);
+  }, delayBeforeFade);
 });

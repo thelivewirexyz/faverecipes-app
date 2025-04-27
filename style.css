@@ -11,6 +11,12 @@ body {
   border: 1px solid #dcdcdc;
   margin: 0 auto;
   overflow: hidden;
+  display: none; /* Hidden initially */
+  opacity: 0; /* Invisible initially */
+  transition: opacity;
+}
+#maincontainer.visible {
+  opacity: 1;
 }
 @media only screen and (max-width: 600px) {
   #maincontainer {
