@@ -20,7 +20,7 @@ body {
 }
 #header {
   border-bottom: 1px solid #dcdcdc;
-  background-color: rgb(216, 255, 142);
+  background-color: #d8ff8e;
   padding: 2rem;
   min-height: 400px;
   display: flex;
