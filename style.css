@@ -1,13 +1,13 @@
 body {
   font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #maincontainer {
   max-width: 350px;
   border: 1px solid #dcdcdc;
-  border-radius: 20px;
   margin: 0 auto;
-  margin-block: 4rem;
   overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
@@ -20,10 +20,10 @@ body {
   border-bottom: 1px solid #dcdcdc;
   background-color: rgb(216, 255, 142);
   padding: 2rem;
-  min-height: 200px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-bottom: 3rem;
 }
 
@@ -59,8 +59,7 @@ h1 {
   font-size: 3rem;
 }
 #new-recipe:hover {
-  background-color: black;
-  color: white;
+  color: rgb(101, 156, 0);
 }
 .active {
   display: block !important;
