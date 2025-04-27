@@ -1,0 +1,90 @@
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+#maincontainer {
+  max-width: 350px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+#header {
+  border-bottom: 1px solid #dcdcdc;
+  background-image: url(bg.webp);
+  background-size: cover;
+  padding: 2rem;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
+}
+#content {
+  padding: 2rem;
+}
+h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+#recipe-form {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #dcdcdc;
+  display: none;
+}
+#new-recipe {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  transition: all 0.3s ease-in-out;
+}
+#new-recipe:hover {
+  background-color: black;
+  color: white;
+}
+.active {
+  display: flex !important;
+  flex-direction: column;
+  gap: 10px;
+}
+input,
+select {
+  padding: 8px;
+}
+option:first-child {
+  color: gray;
+}
+button {
+  padding: 8px 12px;
+}
+
+#category-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+#category-list ul li {
+  margin-bottom: 10px;
+}
+#category-list ul li a {
+  text-decoration: none;
+  color: black;
+}
+#category-list h3 {
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: rgb(98, 98, 98);
+}
