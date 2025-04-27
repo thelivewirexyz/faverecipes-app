@@ -13,10 +13,12 @@ body {
   overflow: hidden;
   display: none; /* Hidden initially */
   opacity: 0; /* Invisible initially */
-  transition: opacity;
+  transform: translateY(50px); /* Move down by 50px initially */
+  transition: opacity 1s ease, transform 1s ease;
 }
 #maincontainer.visible {
-  opacity: 1;
+  opacity: 1; /* Fade in */
+  transform: translateY(0);
 }
 @media only screen and (max-width: 600px) {
   #maincontainer {
