@@ -109,5 +109,5 @@ window.addEventListener("load", function () {
     preloader.style.display = "none"; // Hide the preloader
     content.style.display = "block"; // Show the actual content
     document.body.style.overflow = "auto"; // Re-enable scrolling
-  }, 3500); // 500ms fade + 2000ms delay
+  }, 13500); // 500ms fade + 2000ms delay
 });
