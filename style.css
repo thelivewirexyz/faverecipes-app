@@ -60,6 +60,17 @@ h1 {
 input,
 select {
   padding: 8px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #dcdcdc;
+}
+#add-btn {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  font-weight: 400;
 }
 option:first-child {
   color: gray;
