@@ -94,3 +94,20 @@ addBtn.addEventListener("click", function () {
 newRecipeBtn.addEventListener("click", function () {
   recipeForm.classList.toggle("active");
 });
+
+// Wait for FULL page load (including images, fonts, videos)
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("maincontainer");
+
+  // Start fade out
+  preloader.style.transition = "opacity 0.5s ease";
+  preloader.style.opacity = "0";
+
+  // After fade-out (0.5s) + 2s delay (total 2.5s)
+  setTimeout(() => {
+    preloader.style.display = "none"; // Hide the preloader
+    content.style.display = "block"; // Show the actual content
+    document.body.style.overflow = "auto"; // Re-enable scrolling
+  }, 3500); // 500ms fade + 2000ms delay
+});
