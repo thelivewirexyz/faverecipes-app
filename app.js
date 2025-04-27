@@ -97,7 +97,7 @@ newRecipeBtn.addEventListener("click", function () {
 
 // Wait for FULL page load (including images, fonts, videos)
 const fadeTime = 500; // Fade-out duration (0.5s)
-const delayBeforeFade = 3000; // Delay before starting fade-out (2s)
+const delayBeforeFade = 2000; // Delay before starting fade-out (2s)
 
 window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
