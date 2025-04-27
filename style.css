@@ -106,11 +106,11 @@ button {
   padding: 0;
   margin: 0;
 }
-#category-list {
+/* #category-list {
   display: flex;
   flex-direction: column;
   gap: 0;
-}
+} */
 .recipe {
   padding: 2rem;
   border-bottom: 1px solid #dcdcdc;
@@ -131,8 +131,12 @@ button {
   text-transform: uppercase;
   font-size: 13px;
   margin: 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #000;
   margin-bottom: 1rem;
   color: black;
+  display: inline-block;
 }
 .icon {
   color: rgb(0, 0, 0);
