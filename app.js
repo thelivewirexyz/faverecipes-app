@@ -26,7 +26,7 @@ const recipeForm = document.getElementById("recipe-form");
 
 let recipes = []; // <-- uncomment this!
 
-let categories = ["soups", "sauce", "smoothies", "pasta", "pastries"];
+let categories = ["soups", "sauce", "smoothies", "pasta", "pastries", "others"];
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
