@@ -7,7 +7,7 @@ body {
   border: 1px solid #dcdcdc;
   border-radius: 20px;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-block: 4rem;
   overflow: hidden;
 }
 #header {
@@ -67,24 +67,33 @@ option:first-child {
 button {
   padding: 8px 12px;
 }
-
 #category-list ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #dcdcdc;
+}
+#category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.recipe {
+  background-color: #f3f3f3;
+  padding: 2rem;
+  border-radius: 20px;
 }
 #category-list ul li {
   margin-bottom: 10px;
 }
 #category-list ul li a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: rgb(98, 98, 98);
+  font-size: 15px;
 }
 #category-list h3 {
-  font-weight: 400;
+  font-weight: 350;
+  text-transform: uppercase;
+  font-size: 13px;
   margin: 0;
   margin-bottom: 1rem;
   color: black;

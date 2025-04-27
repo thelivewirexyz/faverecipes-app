@@ -36,9 +36,11 @@ function renderCat(cat) {
   let categoryListItems = "";
   for (let i = 0; i < cat.length; i++) {
     let category = cat[i];
-    categoryListItems += `<h3>${capitalizeFirstLetter(category)}</h3>
+    categoryListItems += `<div class="recipe"><h3>${capitalizeFirstLetter(
+      category
+    )}</h3>
     <ul class="recipe-${category}">
-    </ul>`;
+    </ul></div>`;
   }
   categoryList.innerHTML = categoryListItems;
 }
