@@ -10,6 +10,7 @@ body {
   max-width: 350px;
   border: 1px solid #dcdcdc;
   margin: 0 auto;
+  margin-bottom: 100px;
   overflow: hidden;
   display: none; /* Hidden initially */
   opacity: 0; /* Invisible initially */
@@ -176,4 +177,39 @@ button {
   100% {
     transform: rotate(360deg);
   }
+}
+
+#navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  border-top: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.nav-btn {
+  background-color: #d8ff8e;
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background-color: #efff92;
 }

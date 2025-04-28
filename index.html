@@ -16,7 +16,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,250,0,0&icon_names=add,favorite"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,250,0,0&icon_names=add,favorite,refresh"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -54,15 +54,16 @@
             <button id="add-btn">Add Recipe</button>
           </div>
         </div>
-
-        <!-- <div>
-          <label for="filter">Filter by Category:</label>
-          <input type="text" id="filter" placeholder="Type category..." />
-        </div> -->
         <div id="category-list"></div>
       </div>
     </div>
-
+    <div id="navigation">
+      <div class="nav-buttons">
+        <button id="refreshButton" class="nav-btn">
+          <span class="material-symbols-outlined"> refresh </span>
+        </button>
+      </div>
+    </div>
     <script type="module" src="app.js"></script>
   </body>
 </html>

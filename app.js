@@ -121,3 +121,6 @@ window.addEventListener("load", function () {
     }, fadeTime);
   }, delayBeforeFade);
 });
+document.getElementById("refreshButton").addEventListener("click", () => {
+  window.location.reload();
+});
