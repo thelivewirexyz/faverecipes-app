@@ -32,7 +32,7 @@ body {
   border-bottom: 1px solid #dcdcdc;
   background-color: #d8ff8e;
   padding: 2rem;
-  min-height: 400px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,14 +65,17 @@ h1 {
   transition: all 0.3s ease-in-out;
   border: 0;
   padding: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   color: black;
   background-color: white;
+  padding-right: 2rem;
+  border-right: 1px solid #dcdcdc;
 }
 #new-recipe .add {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+#refreshButton span {
+  font-size: 2rem;
 }
 #new-recipe:hover {
   color: rgb(101, 156, 0);
@@ -100,7 +103,7 @@ option:first-child {
   color: gray;
 }
 button {
-  padding: 8px 12px;
+  padding: 0;
 }
 #category-list ul {
   list-style-type: none;
@@ -193,23 +196,15 @@ button {
 }
 .nav-buttons {
   display: flex;
-  gap: 10px;
-  margin: 20px;
 }
 
 .nav-btn {
-  background-color: #d8ff8e;
   color: black;
   border: none;
-  padding: 12px;
-  border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-left: 2rem;
+  background: transparent;
 }
 
 .nav-btn:hover {
-  background-color: #efff92;
 }
