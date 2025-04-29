@@ -66,24 +66,6 @@ h1 {
   gap: 15px;
   padding: 2rem;
 }
-#new-recipe {
-  transition: all 0.3s ease-in-out;
-  border: 0;
-  padding: 0;
-  color: black;
-  padding-right: 2rem;
-  border-right: 1px solid #dcdcdc;
-}
-#new-recipe .add {
-  font-size: 2rem;
-}
-
-#refreshButton span {
-  font-size: 2rem;
-}
-#new-recipe:hover {
-  color: rgb(101, 156, 0);
-}
 .active {
   display: block !important;
 }
@@ -201,12 +183,29 @@ button {
 }
 .nav-buttons {
   display: flex;
+  width: 200px;
+  justify-content: space-evenly;
 }
 
+#new-recipe,
 .nav-btn {
-  color: black;
-  border: none;
   cursor: pointer;
-  padding-left: 2rem;
-  background: transparent;
+  transition: all 0.3s ease-in-out;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+}
+#new-recipe .add,
+#refreshButton span {
+  font-size: 2rem;
+}
+
+#new-recipe:hover,
+.nav-btn:hover {
+  color: rgb(101, 156, 0);
 }
