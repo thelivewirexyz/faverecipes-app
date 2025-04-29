@@ -132,7 +132,9 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
-  modal.style.display = "flex";
+  modal.style.pointerEvents = "all";
+  modal.style.opacity = "1";
+  modal.style.transition = "opacity 0.5s ease-in-out";
   document.body.style.overflow = "hidden";
   mainCon.style.overflow = "hidden";
   mainCon.style.maxHeight = "calc(100vh - 100px)";
@@ -145,7 +147,7 @@ btn.onclick = function () {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-  modal.style.display = "none";
+  modal.style.opacity = "0";
   document.body.style.overflow = "auto";
   mainCon.style.overflow = "auto";
   mainCon.style.maxHeight = "auto";
