@@ -125,13 +125,14 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("new-recipe");
+var mainCon = document.getElementById("maincontainer");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   document.body.style.overflow = "hidden";
   window.scrollTo({
     top: 0,
@@ -146,9 +147,9 @@ span.onclick = function () {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//     document.body.style.overflow = "auto";
+//   }
+// };
