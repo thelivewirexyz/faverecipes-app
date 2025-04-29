@@ -75,6 +75,7 @@ select {
 }
 select {
   -webkit-appearance: none;
+  background: transparent;
 }
 #add-btn {
   background-color: black;
