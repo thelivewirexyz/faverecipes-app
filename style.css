@@ -84,6 +84,9 @@ select a {
   color: grey !important;
   outline: none;
 }
+input::placeholder {
+  color: grey;
+}
 #add-btn {
   background-color: black;
   color: white;
