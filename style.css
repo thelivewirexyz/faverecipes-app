@@ -73,6 +73,9 @@ select {
   border-radius: 20px;
   border: 1px solid #dcdcdc;
 }
+select {
+  -webkit-appearance: none;
+}
 #add-btn {
   background-color: black;
   color: white;
