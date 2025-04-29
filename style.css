@@ -30,9 +30,13 @@ body {
 }
 #header {
   border-bottom: 1px solid #dcdcdc;
-  background-color: #d8ff8e;
+  background-image: url(slide7.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 2rem;
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -50,7 +54,7 @@ h1 {
   font-weight: 300;
   font-size: 3.5rem;
   margin: 0;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 #recipe-form {
@@ -146,7 +150,7 @@ button {
   display: inline-block;
 }
 .icon {
-  color: rgb(0, 0, 0);
+  color: white;
   font-size: 4rem;
   margin-bottom: -0.5rem;
 }
