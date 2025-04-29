@@ -132,17 +132,16 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Optional: adds a smooth scrolling animation
+  });
   modal.style.pointerEvents = "all";
   modal.style.opacity = "1";
   modal.style.transition = "opacity 0.5s ease-in-out";
   document.body.style.overflow = "hidden";
   mainCon.style.overflow = "hidden";
   mainCon.style.maxHeight = "calc(100vh - 100px)";
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // Optional: adds a smooth scrolling animation
-  });
 };
 
 // When the user clicks on <span> (x), close the modal
