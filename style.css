@@ -59,8 +59,8 @@ h1 {
 #recipe-form div {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 2rem;
+  gap: 20px;
+  padding: 1rem 2rem 3rem 2rem;
 }
 input,
 select {
