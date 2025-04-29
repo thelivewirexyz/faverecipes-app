@@ -134,6 +134,9 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function () {
   modal.style.display = "flex";
   document.body.style.overflow = "hidden";
+  mainCon.style.overflow = "hidden";
+  mainCon.style.maxHeight = "calc(100vh - 100px)";
+
   window.scrollTo({
     top: 0,
     behavior: "smooth", // Optional: adds a smooth scrolling animation
@@ -144,6 +147,8 @@ btn.onclick = function () {
 span.onclick = function () {
   modal.style.display = "none";
   document.body.style.overflow = "auto";
+  mainCon.style.overflow = "auto";
+  mainCon.style.maxHeight = "auto";
 };
 
 // When the user clicks anywhere outside of the modal, close it

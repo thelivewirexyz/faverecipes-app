@@ -214,7 +214,7 @@ button {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100vh; /* Full height */
+  height: calc(100vh - 100px); /* Full height */
   overflow: hidden; /* Enable scroll if needed */
   flex-wrap: wrap;
   justify-content: center;
