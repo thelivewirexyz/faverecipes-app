@@ -73,10 +73,16 @@ select {
   border-radius: 20px;
   border: 1px solid #dcdcdc;
 }
-select {
+input:focus,
+select:focus,
+input:focus-within,
+select:focus-within,
+select,
+select a {
   -webkit-appearance: none;
   background: transparent;
-  color: #000 !important;
+  color: grey !important;
+  outline: none;
 }
 #add-btn {
   background-color: black;
